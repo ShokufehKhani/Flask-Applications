@@ -46,7 +46,7 @@ You can install the required packages using:
 1. **Clone the Repository**:
    ```bash
    git clone git@github.com:ShokufehKhani/Flask-Applications.git
-cd student-portal
+  cd student-portal
 
 
 2. **Run the Flask application**:
