@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="centered-container">
+        <div class="transparent-container">
+            <header class="header">
+                <h1>Welcome to the Nilu institute</h1>
+                <h2>We are committed to making an impact</h2>
+            </header>
+            <nav class="button-container">
+                <a href="{{ url_for('student_login') }}" class="nav-button">Student Login</a>
+                <a href="{{ url_for('teacher_login') }}" class="nav-button">Teacher Login</a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

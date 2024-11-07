@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/course_details.css') }}">
+</head>
+<body>
+    <div class="centered-container">
+        <div class="transparent-container">
+            <header class="header">
+                <h2>Course Details</h2>
+            </header>
+            
+            <p><strong>Course Name:</strong> {{ course['name'] }}</p>
+            <p><strong>Major:</strong> {{ course.major }}</p>
+            <p><strong>Description:</strong></p>
+            <div class="description-box">
+                {{ course.description|limit_words(1000) }}
+            </div>
+            <p><strong>Time:</strong> {{ course.time }}</p>
+            <p><strong>Capacity:</strong> {{ course.capacity }}</p>
+            
+            <a href="{{ url_for('student_register_course') }}" class="back-button">Back to Course List</a>
+        </div>
+    </div>
+</body>
+</html>

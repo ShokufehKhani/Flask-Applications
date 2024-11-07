@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student_profile.css') }}">
+</head>
+<body>
+    <div class="centered-container">
+        <div class="transparent-container">
+            <header class="header">
+                <h2>Welcome, {{ student['name'] }}</h2>
+            </header>
+            <div class="profile-nav">
+                <a href="{{ url_for('personal_info') }}" class="profile-button">View Personal Info</a>
+                <a href="{{ url_for('student_register_course') }}" class="profile-button">Register for a Course</a>
+                <a href="{{ url_for('student_courses') }}" class="profile-button">View Your Courses</a>
+                <a href="{{ url_for('update_personal_info') }}" class="profile-button">Update Personal Info</a>
+                <form action="{{ url_for('logout') }}" method="POST" style="display:inline;">
+                    <button type="submit" class="logout-button">Logout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

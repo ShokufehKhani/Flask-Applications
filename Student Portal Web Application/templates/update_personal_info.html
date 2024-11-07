@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Personal Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/update_personal_info.css') }}">
+</head>
+<body>
+    <div class="centered-container">
+        <div class="transparent-container">
+            <header class="header">
+                <h2>Update Personal Information</h2>
+            </header>
+            <form method="POST" class="form-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  placeholder="Enter new username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter new password">
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"  placeholder="Enter new phone"}">
+
+                <button type="submit" class="submit-button">Update Information</button>
+            </form>
+            <a href="{{ url_for('personal_info') }}" class="back-button">Back to Personal Info</a>
+        </div>
+    </div>
+</body>
+</html>
