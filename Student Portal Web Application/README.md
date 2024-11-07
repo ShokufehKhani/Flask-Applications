@@ -5,12 +5,12 @@ This is a basic student portal web application built using Flask. The applicatio
 
 ## **Features**
 
-- 1. **Home Page**: The home page (`/`) displays navigation links to "Home", "Profile", and "Courses."
-- 2. **Profile Page**: Students can view their profile (`/profile`), including personal details (name, email, major), which are dynamically passed from the server.
+-  **Home Page**: The home page (`/`) displays navigation links to "Home", "Profile", and "Courses."
+-  **Profile Page**: Students can view their profile (`/profile`), including personal details (name, email, major), which are dynamically passed from the server.
 - **Courses Page**: A page (`/courses`) that lists all available courses with their names, descriptions, and the teacher's name.
-- 3. **Course Details Page**: A dynamic page (`/courses/<course_id>`) that displays detailed information about a specific course based on the course_id.
-- 4. **Add Courses (Teacher Role)**: Teachers can add new courses through a form on the `/add_course` page.
-- 5. **Forms and Data Handling**: Students can update their personal details via a form on the profile page.
+- **Course Details Page**: A dynamic page (`/courses/<course_id>`) that displays detailed information about a specific course based on the course_id.
+- **Add Courses (Teacher Role)**: Teachers can add new courses through a form on the `/add_course` page.
+- **Forms and Data Handling**: Students can update their personal details via a form on the profile page.
 
 ## **File Structure**
   ``bash
@@ -45,7 +45,7 @@ You can install the required packages using:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/student-portal.git
+   git clone git@github.com:ShokufehKhani/Flask-Applications.git
 cd student-portal
 
 
