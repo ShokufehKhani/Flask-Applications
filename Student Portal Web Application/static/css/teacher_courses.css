@@ -1,0 +1,91 @@
+/* Apply the DM Serif Text font to the entire body */
+body {
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Centered container */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0e0e0;
+}
+
+/* Transparent container styling */
+.transparent-container {
+    background: rgba(0, 47, 108, 0.6); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Table styles */
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white; 
+}
+
+.courses-table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #001f3f; 
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tr:hover {
+    background-color: #f1f1f1; 
+}
+
+/* Back button and action button styling */
+.back-button, .action-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #001f3f; 
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover, .action-button:hover {
+    background-color: #003366;
+}

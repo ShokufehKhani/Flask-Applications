@@ -1,0 +1,119 @@
+/* Apply the DM Serif Text font to the entire body */
+body {
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Centered container */
+.centered-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Transparent container styling */
+.transparent-container {
+    background-color: rgba(0, 47, 108, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1000px; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Table container to enable scrolling */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+/* Style for the table */
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.courses-table th, .courses-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center; 
+    color: white;
+}
+
+.courses-table th {
+    background-color: #001f3f;
+}
+
+.courses-table tr:nth-child(even) {
+    background-color: rgba(0, 47, 108, 0.3);
+}
+
+.courses-table tr:nth-child(odd) {
+    background-color: rgba(0, 47, 108, 0.2);
+}
+
+/* Style for the action buttons */
+.action-button {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.action-button:hover {
+    background-color: #003366;
+}
+
+/* Back button styling */
+.back-button {
+    background-color: #001f3f; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
+}
+
+.back-button:hover {
+    background-color: #003366; 
+}
+

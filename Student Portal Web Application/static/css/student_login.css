@@ -1,0 +1,115 @@
+/* Apply the DM Serif Text font to the entire body */
+body {
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative; /* Needed to position the back button */
+}
+
+/* Centered container */
+.centered-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Transparent container styling */
+.transparent-container {
+    background-color: rgba(0, 47, 108, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Form styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased space between form elements */
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    color: #001f3f;
+}
+
+input {
+    padding: 12px; /* Increased padding for better touch */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+input[type="email"] {
+    margin-bottom: 20px; 
+}
+
+input[type="password"] {
+    margin-bottom: 25px; 
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.submit-button:hover {
+    background-color: #003366;
+}
+
+/* Back to Home button styling */
+.back-button {
+    background-color: #001f3f; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute; 
+    bottom: 60px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.back-button:hover {
+    background-color: #003366;
+}

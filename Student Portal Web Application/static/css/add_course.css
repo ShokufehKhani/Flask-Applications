@@ -1,0 +1,113 @@
+/* Apply the DM Serif Text font to the entire body */
+body {
+    font-family: 'DM Serif Text', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Centered container */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0e0e0;
+}
+
+/* Transparent container styling */
+.transparent-container {
+    background: rgba(0, 47, 108, 0.6); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Form container styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Label and input styling */
+label {
+    font-size: 16px;
+    color: #001f3f;
+    margin-bottom: 8px;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    text-align: left; 
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #003366;
+}
+
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #001f3f; 
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #003366;
+}
