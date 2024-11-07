@@ -1,0 +1,5 @@
+import pandas as pd
+courses_df = pd.read_excel('data/courses_data.xlsx')
+print(courses_df.columns)  # Ensure 'name' is among the columns
+print(courses_df[['id', 'name', 'description']])  # Check data for the selected course
+
